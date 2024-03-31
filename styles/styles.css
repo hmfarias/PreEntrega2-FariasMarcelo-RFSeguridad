@@ -17,9 +17,31 @@
 	background-color: var(--color-primary-accent);
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
 	.nav_ul-bg {
 		background-color: #646464;
 	}
 }
 /* END NAVBAR ------------------------------------------------------ */
+
+/* JUMBOTRON ------------------------------------------------------ */
+.jumbotron {
+	background-image: url(../resources/slide-02.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: flex-end;
+	align-items: end;
+}
+.jumbotron h1 {
+	color: #fbc500;
+	text-shadow: 0 0 5px #000;
+}
+.jumbotron p {
+	text-align: justify;
+}
+@media only screen and (max-width: 575px) {
+	.jumbotron h2 {
+		font-size: 20px;
+	}
+}
+/* END JUMBOTRON -------------------------------------------------- */
