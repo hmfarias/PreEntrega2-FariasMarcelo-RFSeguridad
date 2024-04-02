@@ -25,7 +25,7 @@
 
 		<link
 			rel="shortcut icon"
-			href="./resources/logoLetrasBlancas.ico"
+			href="../resources/logoLetrasBlancas.ico"
 			type="image/x-icon"
 		/>
 
@@ -34,7 +34,7 @@
 		<!-- End Link to My Css --------------------------------------->
 		<title>Contacto</title>
 	</head>
-	<body>
+	<body class="bg-info-subtle">
 		<header>
 			<!-- Start NAVBAR BS 5.3.3 ----------------------------------->
 			<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -45,6 +45,7 @@
 							id="logo"
 							src="../resources/logoRF.svg"
 							alt="RF Seguridad Integral logo"
+							style="color: black"
 					/></a>
 					<button
 						class="navbar-toggler"
@@ -82,94 +83,149 @@
 		</header>
 		<!-- Main content  -->
 		<main>
-			<div class="pageTitle">
-				<h3>CONTACTO</h3>
+			<!-- Start PAGE BANNER --------------------------------------->
+			<div class="aboutBanner p-5 text-white">
+				<div class="col">
+					<h5>CONTACTO</h5>
+				</div>
 			</div>
+			<!-- End PAGE BANNER ----------------------------------------->
 
 			<section class="contactSection">
-				<div class="encabezadoDiv">
-					<h3>No dudes en escribirnos</h3>
-					<p>
+				<!-- Start contact header -->
+				<div class="container bg-secondary p-2 mt-3 text-center rounded-4">
+					<p class="text-warning fw-bold fs-4 ms-2 mb-1 fst-italic">
+						No dude en escribirnos
+					</p>
+					<p class="text-light fs-5 ms-2 mb-1 fst-italic">
 						Nuestro equipo de atención al cliente se encuentra a su entera disposición.
 					</p>
-					<p>Podemos ofrecerle una solución flexible y adaptable a su necesidad</p>
-				</div>
-
-				<div class="contactDiv">
-					<h4>CONTÁCTENOS</h4>
-					<div class="contacto">
-						<p>+54 3514444444</p>
-						<p>info@rfseguridad.com.ar</p>
-						<p>Félix Frias 344 - PB - Local 1 - Bº General Paz - Córdoba Capital</p>
-					</div>
-					<div class="redesSociales">
-						<h4>REDES SOCIALES</h4>
-						<ul>
-							<li>
-								<a href="https://www.instagram.com/">
-									<img
-										class="socialLogo"
-										src="../resources/instagram.svg"
-										alt="Instagram logo"
-									/>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.facebook.com/">
-									<img
-										class="socialLogo"
-										src="../resources/facebook.svg"
-										alt="Instagram logo"
-									/>
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com">
-									<img
-										class="socialLogo"
-										src="../resources/linkedin.svg"
-										alt="Instagram logo"
-									/>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-
-				<!-- Formulario de Contacto  -->
-				<div class="formDiv">
-					<p>
-						También puede comunicarse, completando el siguiente formulario y un
-						representante lo contactará a la brevedad
+					<p class="text-light fs-5 ms-2 mb-3 fst-italic">
+						Podemos ofrecerle una solución flexible y adaptable a su necesidad.
 					</p>
-					<form
-						class="contactForm"
-						action=""
-						method="post"
-						enctype="application/x-www-form-urlencoded"
-					>
-						<p>Nombre / Razón Social (*)</p>
-						<input type="text" required /> <br />
-						<p>DNI / CUIT</p>
-						<input type="number" /> <br />
-						<p>Domicilio</p>
-						<input type="text" /> <br />
-						<p>Teléfono / Celular</p>
-						<input type="text" required /> <br />
-						<p>E-mail</p>
-						<input type="email" /> <br />
-						<p>Comentarios</p>
-						<textarea
-							name=""
-							id=""
-							cols="30"
-							rows="10"
-							placeholder="escribe tu comentario"
-						></textarea>
-						<br />
-						<!--------tipo de-botones en formularios--------------------------->
-						<input type="submit" />
-					</form>
+				</div>
+				<!-- End contact header -->
+				<div class="container">
+					<div class="row mt-3">
+						<div class="contactDiv col-4 ps-0">
+							<div class="bg-secondary p-3 rounded-3 text-light">
+								<h4>CONTÁCTENOS</h4>
+								<div class="contacto">
+									<p>+54 3514444444</p>
+									<p>info@rfseguridad.com.ar</p>
+									<p>Félix Frias 344 - PB - Local 1 - Bº General Paz - Córdoba Capital</p>
+								</div>
+								<div class="redesSociales">
+									<h4>REDES SOCIALES</h4>
+									<ul>
+										<li>
+											<a href="https://www.instagram.com/">
+												<img
+													class="socialLogo"
+													src="../resources/instagram-blk.svg"
+													alt="Instagram logo"
+												/>
+											</a>
+										</li>
+										<li>
+											<a href="https://www.facebook.com/">
+												<img
+													class="socialLogo"
+													src="../resources/facebook-blk.svg"
+													alt="Instagram logo"
+												/>
+											</a>
+										</li>
+										<li>
+											<a href="https://www.linkedin.com">
+												<img
+													class="socialLogo"
+													src="../resources/linkedin-blk.svg"
+													alt="Instagram logo"
+												/>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<!-- Formulario de Contacto  -->
+						<div class="formDiv col-8 bg-secondary rounded-3 p-3 text-light">
+							<p>
+								También puede comunicarse, completando el siguiente formulario y un
+								representante lo contactará a la brevedad
+							</p>
+
+							<form
+								class="contactForm"
+								action=""
+								method="post"
+								enctype="application/x-www-form-urlencoded"
+							>
+								<div class="mb-3 mt-3">
+									<label for="email" class="form-label">Nombre / Razón Social (*)</label>
+									<input
+										type="text"
+										class="form-control"
+										id="nombre"
+										placeholder="Ingrese nombre"
+										name="nombre"
+										required
+									/>
+								</div>
+								<div class="mb-3">
+									<label for="email" class="form-label">DNI / CUIT</label>
+									<input
+										type="number"
+										class="form-control"
+										id="dni"
+										placeholder="Ingrese DNI o CUIT"
+										name="dni"
+										required
+									/>
+								</div>
+								<div class="mb-3">
+									<label for="email" class="form-label">Domicilio</label>
+									<input
+										type="text"
+										class="form-control"
+										id="domicilio"
+										placeholder="Ingrese domicilio"
+										name="domicilio"
+										required
+									/>
+								</div>
+								<label for="email" class="form-label">Teléfono</label>
+								<input
+									type="text"
+									class="form-control"
+									id="telefono"
+									placeholder="Ingrese telefono (fijo o celular)"
+									name="telefono"
+									required
+								/>
+								<div class="mb-3">
+									<label for="email" class="form-label">Email:</label>
+									<input
+										type="email"
+										class="form-control"
+										id="email"
+										placeholder="Enter email"
+										name="email"
+									/>
+								</div>
+								<label for="comment">Comments:</label>
+								<textarea
+									class="form-control"
+									rows="5"
+									id="comment"
+									name="text"
+								></textarea>
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</form>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
