@@ -98,3 +98,11 @@
 	background-image: url(../resources/slide-01.jpg);
 	background-size: cover;
 }
+
+.misVisVal {
+	max-width: fit-content;
+	max-height: 150px;
+}
+.justified {
+	text-align: justify;
+}
