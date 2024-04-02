@@ -92,3 +92,9 @@
 	font-size: small;
 }
 /* END FOOTER ----------------------------------------------------- */
+
+/* QUIENES SOMOS -------------------------------------------------- */
+.aboutBanner {
+	background-image: url(../resources/slide-01.jpg);
+	background-size: cover;
+}
